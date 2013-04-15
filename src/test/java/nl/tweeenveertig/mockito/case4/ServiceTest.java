@@ -21,7 +21,7 @@ public class ServiceTest {
 //        service.doSomething();
 //        assertEquals(9, service.doSomething());
 
-        // can't get this to work...
+        // can't get this to work... :(
     }
 
 }
