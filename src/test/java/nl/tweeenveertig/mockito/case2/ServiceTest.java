@@ -12,8 +12,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.powermock.api.mockito.PowerMockito.whenNew;
 
-@RunWith(PowerMockRunner.class)
-@PrepareForTest(ServiceWithNewDependency.class)
+@RunWith(PowerMockRunner.class)                 // Be sure to pick this runner, not the default MockitoJUnitRunner
+@PrepareForTest(ServiceWithNewDependency.class) // Note that you prepare the class where the construction is taking
+                                                // place, not the constructed class.
 public class ServiceTest {
 
     @Test
